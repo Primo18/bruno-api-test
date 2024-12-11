@@ -1,0 +1,17 @@
+meta {
+  name: test1
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{var1}}/users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Dani"
+  }
+}
